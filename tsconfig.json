@@ -1,0 +1,29 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": ".",
+    "declaration": true,
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "sourceMap": false,
+    "strict": true,
+    "strictNullChecks": true,
+    "target": "ES2015",
+    "esModuleInterop": true,
+    "lib": [
+      "es2015",
+    ],
+    "types": [
+      "node",
+    ],
+    "outDir": "dist",
+    "rootDir": ".",
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+  ]
+}
