@@ -1,4 +1,4 @@
-Algorithm is an implementation of https://en.wikipedia.org/wiki/Knapsack_problem
+https://en.wikipedia.org/wiki/Knapsack_problem
 
 
 ## Results
