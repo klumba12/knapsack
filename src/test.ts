@@ -1,5 +1,3 @@
-
-
 import currency from 'currency.js';
 import { getTransactions, Transaction } from './api';
 import { prioritize } from './prioritize';

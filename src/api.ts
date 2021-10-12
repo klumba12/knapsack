@@ -6,13 +6,13 @@ import * as path from 'path';
 const TRANSACTION_API = path.resolve(__dirname, '../data/transactions.csv');
 const LATENCY_API = path.resolve(__dirname, '../data/api_latencies.json');
 
+type Latencies = { [key: string]: number };
+
 interface TransactionCsvRow {
   id: string;
   amount: string;
   bank_country_code: string;
 }
-
-type Latencies = { [key: string]: number };
 
 export interface Transaction {
   id: string;
@@ -39,7 +39,6 @@ export function getTransactions(): Promise<Transaction[]> {
       .on('end', () => resolve(transactions));
   });
 }
-
 
 // for the simplicity let's keep getLatency as a synchronous function
 const LATENCIES: Latencies = require(LATENCY_API);
